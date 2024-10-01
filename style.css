@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(68, 68, 68);
+    color: rgb(219, 216, 208);
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    border-radius: 25px; 
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+}
+
+hr {
+    opacity: 0.4;
+    margin: 25px 0;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    width: calc(100vw - 60px);
+    font-size: 1.25em;
+    color: rgb(219, 216, 208);
+    padding: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    outline: none;
+}
+
+.weather-container {
+    margin: 25px;
+    padding: 25px;
+    border-radius: 25px;
+    max-width: 440px;
+    width: calc(100vw - 50px);
+    background-image: linear-gradient(to right top, #463e59, #3a4660, #304d61, #2c525f, #30575a, #365b5a, #3d5f5b, #45635b, #496862, #4e6d68, #53736f, #587876);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    color: rgb(228, 213, 173);
+}
+
+.search-weather-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-weather-container i {
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.forecast-weather-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 20px;
+    font-size: 1.15em;
+    text-align: center;
+    color: rgb(228, 213, 173);
+}
+
+.current-weather-temp {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+}
+
+.current-weather-title {
+    font-size: 2em;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+.current-weather-location,
+.current-weather-date {
+    font-size: 1em;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.current-weather-location i,
+.current-weather-date i {
+    margin-right: 5px;
+    color: rgb(219, 216, 208);
+}
+
+.current-weather-location {
+    margin-bottom: 10px;
+}
+
+.forecast-item {
+    padding: 15px;
+    background-color: rgba(68, 68, 68, 0.5);
+    border-radius: 10px;
+    color: rgb(228, 213, 173);
+}
+
+.forecast-item p {
+    margin: 5px 0;
+}
+

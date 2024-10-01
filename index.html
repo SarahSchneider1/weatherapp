@@ -4,14 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylessheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="logic.js"></script>
     <script src="icons.js"></script>
+    <script src="https://kit.fontawesome.com/37a3440d08.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+<main>
+    <div>
+        <div class="weather-container search-weather-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search weather">
+        </div>
+        <div class="weather-container current-weather-container">
+            <div>
+                <img src="" width="60">
+            </div>
+            <p class="current-weather-temp">
+
+            </p>
+            <p class="current-weather-title">
+
+            </p>
+            <hr>
+            <p class="current-weather-location">
+                <i class="fa-solid fa-cloud fa-fw"></i> 
+            </p>
+            <p class="current-weather-date">
+                <i class="fa-solid fa-calendar-day fa-fw"></i> 
+            </p>
+        </div>
+    </div>
+
+    <div class="weather-container forecast-weather-container">
+        <!-- Forecast content goes here -->
+    </div>
+</main>
 </body>
 </html>
